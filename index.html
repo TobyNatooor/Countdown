@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <title>Countdown</title>
 </head>
+
 <body>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         h1 {
             text-align: center;
-            margin: 40px auto;
             font-size: 80px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        #Title {
+            background-color: black;
+            color: white;
         }
     </style>
 
+    <h1 id="Title">Countdown</h1>
+
     <div>
-        <h1 id="theCountdown"></h1>
-        <h1 id="end"></h1>
+        <select name="Month" id="Month"></select>
+        <select name="Day" id="Day"></select>
+        <select name="Year" id="Year"></select>
+
+        <div>
+            <select name="Hour" id="Hour"></select>
+            <select name="Minute" id="Minute"></select>
+            <select name="Second" id="Second"></select>
+        </div>
+
+        <button id="Start">Start Countdown</button>
+
+        <h1 id="theCountdown">0:0:0</h1>
     </div>
-    
+
 </body>
+
 </html>
