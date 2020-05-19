@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>Countdown</title>
 </head>
 
 <body>
     <style>
+        html {
+            font-size: 62.5%;
+        }
         * {
             margin: 0;
             padding: 0;
         }
         h1 {
             text-align: center;
-            font-size: 80px;
+            font-size: 5rem;
             margin: 0 auto;
             padding: 15px;
         }
@@ -24,11 +27,16 @@
             background-color: black;
             color: white;
         }
+        div#container {
+            max-width: 720px;
+            margin: auto;
+        }
     </style>
 
     <h1 id="Title">Countdown</h1>
 
-    <div>
+    <div id="container">
+        
         <select name="Month" id="Month"></select>
         <select name="Day" id="Day"></select>
         <select name="Year" id="Year"></select>
@@ -40,6 +48,7 @@
         </div>
 
         <button id="Start">Start Countdown</button>
+        <button id="stopCountdown">Stop Countdown</button>
 
         <h1 id="theCountdown">0:0:0</h1>
     </div>
