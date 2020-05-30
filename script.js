@@ -43,7 +43,7 @@ Start.addEventListener('click', () => {
         Year.options[Year.selectedIndex].value + " " +
         Hour.options[Hour.selectedIndex].value + ":" +
         Minute.options[Minute.selectedIndex].value + ":" +
-        Second.options[Second.selectedIndex].value;
+        Second.options[Second.selectedIndex].value + "+01:00";
     startCountdown = setInterval(displayCountdown, 1000)
 })
 document.querySelector("#stopCountdown").addEventListener('click', function () {
